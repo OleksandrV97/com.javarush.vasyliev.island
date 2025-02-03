@@ -8,4 +8,8 @@ public class Settings {
     public final static int bearSpeed = 2;
     public final static int bearSaturation = 80;
 
+    public final static int
+    public final static int
+    public final static int
+    public final static int
 }
