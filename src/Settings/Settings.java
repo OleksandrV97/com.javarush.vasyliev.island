@@ -1,4 +1,5 @@
-import entity.Island;
+package Settings;
+
 import entity.creature.Creature;
 import entity.creature.animal.Animal;
 import entity.creature.animal.herbivor.*;
