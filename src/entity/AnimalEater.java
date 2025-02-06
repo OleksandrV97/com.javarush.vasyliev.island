@@ -1,4 +1,4 @@
 package entity;
 
-public class AnimalEater {
+public class AnimalEater implements  {
 }
