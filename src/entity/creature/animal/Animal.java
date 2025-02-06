@@ -1,5 +1,6 @@
 package entity.creature.animal;
 
+import entity.Location;
 import entity.creature.Creature;
 
 public class Animal extends Creature {
@@ -19,7 +20,7 @@ public class Animal extends Creature {
         // ДЕФОЛТНАЯ РЕАЛИЗАЦИЯ
     }
 
-    Creature reproduce() {
+    Creature reproduce(Location location) {
         // ДЕФОЛТНАЯ РЕАЛИЗАЦИЯ
         return null;
     }
