@@ -1,14 +1,30 @@
 package entity;
 
+import Settings.Settings;
+
 public class Island{
+    private final Location[][] locations;
 
-    private int columnsCount;
-    private int rowsCount;
-
-    public Island(int columnsCount, int rowsCount) {
-        this.columnsCount = columnsCount;
-        this.rowsCount = rowsCount;
+    public Island() {
+        locations = new Location[Settings.columsCount][Settings.rowsCount];
+        for (int x =0; x < Settings.columsCount; x++) {
+            for (int y = 0; y < Settings.rowsCount; y++) {
+                locations[x][y] = new Location(x, y);
+            }
+        }
     }
-    public Location[][] locations = new Location[columnsCount][rowsCount];
+
+    public int getWidth(){
+        return locations.length;
+    }
+
+    public int getHeight() {
+        return locations[0].length;
+    }
+
+    public Location getLocation(int x, int y) {
+        return locations[x][y];
+    }
 
 }
+

@@ -17,7 +17,7 @@ public class AnimalReproducer implements Runnable {
             Location location = findLocation(animal);
             if (location == null) continue;
             if (location.getAnimalCount(animal.getClass()) >= 2) {
-                Animal baby = animal.reproduce(location);
+                Animal baby = animal.reproduced(location);
                 if (baby != null) {
                     location.addAnimal(baby);
                 }
